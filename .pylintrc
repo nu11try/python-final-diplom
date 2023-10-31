@@ -1,0 +1,50 @@
+[MESSAGES CONTROL]
+# Включить/выключить проверки по коду
+disable=C0114,C0115,C0116
+
+[FORMAT]
+# Стиль кодирования (PEP 8)
+max-line-length = 120
+indent-string = "    "
+
+[MASTER]
+# Уровень предупреждений (0 - отключить, 1 - предупреждения, 2 - ошибки)
+max-line-length=120
+max-module-lines=1000
+init-hook='import sys; sys.path.append("/путь/к/вашим/модулям")'
+
+[BASIC]
+# Информация о проекте
+module = diplom
+
+[REPORTS]
+# Формат отчета (по умолчанию, консоль)
+output-format=text
+output-file=pylint_report.txt
+
+[REFACTORING]
+# Опции для рефакторинга (необязательно)
+max-nested-blocks=5
+max-args=5
+
+[TYPECHECK]
+# Опции для проверки типов (если используется)
+generated-members=REQUEST_METHOD
+
+[REFACTORING]
+# Опции для рефакторинга (необязательно)
+max-nested-blocks=5
+max-args=5
+
+[TYPECHECK]
+# Опции для проверки типов (если используется)
+generated-members=REQUEST_METHOD
+
+[IMPORTS]
+# Игнорировать импорты, которые не используются в коде
+ignore-builtin=namedtuple
+
+[DESIGN]
+# Опции для дизайна кода (необязательно)
+max-branches=10
+max-statements=50
